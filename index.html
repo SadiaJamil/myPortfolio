@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+  
+    <script src="https://kit.fontawesome.com/8e65a66a47.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <p style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 50px; color:springgreen ; font-weight: bolder;" >S<span style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 50px; color: #fff ; font-weight: bolder;">adia.</span></p>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Frontend Developer</p>
+                <h1>Hi I'm <span style="color: springgreen;">Sadia</span><br>from Karachi, Pakistan. </h1>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <!-- about section -->
+    <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <h1 class="sub-title">About Me</h1>
+                <p>"Hello! I'm Sadia, a passionate front-end developer with over 6 months of experience crafting responsive and user-friendly websites. Skilled in specific technologies like HTML5, CSS3, Bootstrap, JavaScript etc.
+                Beyond coding, I pride myself on my keen eye for design and relentless pursuit of pixel-perfect layouts. When I'm not behind the screen, you'll find me exploring the latest in web design trends or mentoring budding developers in my community."
+                </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web Interfaces</li>
+                        <li><span>Web Development</span><br>Web Design & Development</li>  
+                        <li><span>SEO</span><br>Search Engine Optimization</li>  
+                    </ul>
+                </div>
+               
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2023-present</span><br>Diploma in Software Engineering</li>
+                        <li><span>2022</span><br>Bachelors in Arts</li>  
+                        <li><span>2017</span><br>Pre-Engineering</li>  
+                    </ul>
+                </div>
+            </div>
+            <div class="about-col-2">
+                <img src="Images/bgpicture.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    </div>
+    <hr>
+    <!-- .........services....... -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                 <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit nobis commodi ipsam recusandae saepe eveniet nesciunt fugiat quos, dignissimos nam modi! Obcaecati magnam eveniet maxime, ipsum quas neque cumque praesentium?</p>
+                    <a href="#">Learn more</a>
+                 </div>
+                 <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2> UI/UX Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit nobis commodi ipsam recusandae saepe eveniet nesciunt fugiat quos, dignissimos nam modi! Obcaecati magnam eveniet maxime, ipsum quas neque cumque praesentium?</p>
+                    <a href="#">Learn more</a>
+                 </div>
+                 <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit nobis commodi ipsam recusandae saepe eveniet nesciunt fugiat quos, dignissimos nam modi! Obcaecati magnam eveniet maxime, ipsum quas neque cumque praesentium?</p>
+                    <a href="#">Learn more</a>
+                 </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <!-- ......portfolio...... -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="Images/mywork1.png" alt="">
+                    <div class="layer">
+                        <h3>Plants Website</h3>
+                        <p>Plant Palace is a plants shop from where you can order different types of plants online.</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/mywork2.png" alt="">
+                    <div class="layer">
+                        <h3>Mirror Website</h3>
+                        <p>Mirror reflection is an online shop from where u can buy a variety of mirrors.</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/mywork3.png" alt="">
+                    <div class="layer">
+                        <h3>Museum Website</h3>
+                        <p>Artifacts hub is a website about museum, displaying information about the antiques present there.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <!-- .....contact..... -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i>sadiajamil70@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i>0336-3914228</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fab fa-facebook"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href=""><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="Images/_CV Resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="message" placeholder="Your Message" rows="6"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName('tab-links');
+        var tabcontents = document.getElementsByClassName('tab-contents');
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById('sidemenu');
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
